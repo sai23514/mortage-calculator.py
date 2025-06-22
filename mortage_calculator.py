@@ -18,8 +18,8 @@ monthly_interest_rate = (interest_rate / 100) / 12
 number_of_payments = loan_term * 12
 monthly_payment = (
     loan_amount
-    * (monthly_interest_rate * (1 + monthly_interest_rate)  number_of_payments)
-    / ((1 + monthly_interest_rate)  number_of_payments - 1)
+    * (monthly_interest_rate * (1 + monthly_interest_rate) ** number_of_payments)
+    / ((1 + monthly_interest_rate) ** number_of_payments - 1)
 )
 
 # Display the repayments.
